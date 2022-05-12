@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apartado1-2 - arrays</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let jugadores = [];
+        for (let i = 1; i < 12; i++) {
+            var jugador = prompt("Introduce el nombre del jugador número "+i);
+            // APARTADO 2
+            var posicion = prompt("Introduce la posicion del jugador numero "+i);
+
+            jugadores.push(i+" - "+jugador+" - "+posicion);
+        }
+
+        let listaJugadores = "";
+        for (let i = 1; i < 12; i++) {
+            listaJugadores += jugadores[i]+"\n";
+        }
+
+        alert(listaJugadores);
+        // AQUI TENGO UN ERROR. AL MOSTRAR LA LISTA NO ENTIENDO POR QUÉ NO ME APARECE EL PRIMER JUGADOR 
+        // Y POR QUÉ ME INTENTA SACAR EL JUGADOR NUMERO 12, SI TENGO PUESTO QUE RECORRA HASTA EL 11
+    </script>
+</body>
+</html>
